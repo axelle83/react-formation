@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       Hello React
       <hr/>
-      <Button text="Valider" />
+      <Button text="Valider" onbuttonclick={(param)=>{console.log('action', param)}} />
       <Button text="Annuler"/>
       <Button text="test"/>
       <Button 
