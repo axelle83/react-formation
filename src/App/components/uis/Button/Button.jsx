@@ -1,11 +1,11 @@
 import React from "react";
-import './Button.css';
+import style from './Button.module.css';
 
 function Button(props) {
     console.log(props);
     return (
     <button 
-        className="Button" 
+        className={style.Button} 
         onClick={(evt) => {
             // traitement de l'event préalable propre au composant
             console.log(evt);
