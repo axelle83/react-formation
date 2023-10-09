@@ -1,20 +1,22 @@
 import React from "react";
 import style from './Button.module.css';
 
-function Button(props) {
+const Button = (props) => {
     console.log(props);
     return (
-    <button 
-        className={style.Button} 
-        onClick={(evt) => {
-            // traitement de l'event préalable propre au composant
-            console.log(evt);
-            // déclenchement de le fonction envoyée par les props 
-            props.onbuttonclick("coucou");
-        }} 
-    >
-        {props.text}</button>);    
-}
+        <button 
+            className={style.Button} 
+            onClick={(evt) => {
+                // traitement de l'event préalable propre au composant
+                console.log(evt);
+                // déclenchement de le fonction envoyée par les props 
+                props.onbuttonclick("coucou");
+            }} 
+        >
+            {props.children}
+        </button>
+    );    
+};
 
 /*const Button = (props) => {
     return <button>Benjamin</button>

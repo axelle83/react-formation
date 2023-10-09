@@ -14,3 +14,12 @@
 
     box-shadow: 15px 15px 25px grey;
 }
+
+.Button>* {
+    vertical-align: middle;
+}
+
+.Button img {
+    width: 32px;
+    height: 32px;
+}
