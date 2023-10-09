@@ -10,7 +10,9 @@ const Button = (props) => {
                 // traitement de l'event préalable propre au composant
                 console.log(evt);
                 // déclenchement de le fonction envoyée par les props 
-                props.onbuttonclick("coucou");
+                if(undefined != props.onbuttonclick) {
+                    props.onbuttonclick("coucou");
+                }
             }} 
         >
             {props.children}
