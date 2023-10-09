@@ -1,7 +1,8 @@
 import React from "react";
 
 function Button(props) {
-    return (<button className="Button">Benjamin</button>);    
+    console.log(props);
+    return (<button className="Button">{props.text}</button>);    
 }
 
 /*const Button = (props) => {

@@ -7,10 +7,17 @@ function App() {
     <div className="App">
       Hello React
       <hr/>
-      <Button />
-      <Button />
-      <Button />
-      <Button />
+      <Button text="Valider" />
+      <Button text="Annuler"/>
+      <Button text="test"/>
+      <Button 
+      x={[1,2]} 
+      c={{abc:123}} 
+      s="cc" 
+      n={1} 
+      b={true} 
+      g={undefined} 
+      f={()=> {console.log('test')}}/>
     </div>
   );
 }
