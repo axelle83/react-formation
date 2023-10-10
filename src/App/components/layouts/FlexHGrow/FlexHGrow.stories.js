@@ -1,11 +1,11 @@
 /* eslint-disable */
-import FlexHGrox from './FlexHGrox';
+import FlexHGrow from './FlexHGrow';
 
 export default {
-  title: "FlexHGrox",
+  title: "FlexHGrow",
 };
 
-export const Default = () => <FlexHGrox />;
+export const Default = () => <FlexHGrow />;
 
 Default.story = {
   name: 'default',

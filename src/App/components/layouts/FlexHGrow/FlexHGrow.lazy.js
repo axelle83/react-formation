@@ -1,11 +1,11 @@
 import React, { lazy, Suspense } from 'react';
 
-const LazyFlexHGrox = lazy(() => import('./FlexHGrox'));
+const LazyFlexHGrow = lazy(() => import('./FlexHGrow'));
 
-const FlexHGrox = props => (
+const FlexHGrow = props => (
   <Suspense fallback={null}>
-    <LazyFlexHGrox {...props} />
+    <LazyFlexHGrow {...props} />
   </Suspense>
 );
 
-export default FlexHGrox;
+export default FlexHGrow;
