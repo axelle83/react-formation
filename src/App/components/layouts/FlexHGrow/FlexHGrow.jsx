@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './FlexHGrox.module.css';
+import styles from './FlexHGrow.module.css';
 
-const FlexHGrox = (props) => {
+const FlexHGrow = (props) => {
   return (
     <div className={styles.FlexHGrox} data-testid="FlexHGrox">
       {props.children}
@@ -10,10 +10,10 @@ const FlexHGrox = (props) => {
   );
 };
 
-FlexHGrox.propTypes = {
+FlexHGrow.propTypes = {
   children: PropTypes.any.isRequired,
 };
 
-FlexHGrox.defaultProps = {};
+FlexHGrow.defaultProps = {};
 
-export default FlexHGrox;
+export default FlexHGrow;
