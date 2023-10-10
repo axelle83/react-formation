@@ -5,10 +5,15 @@ import style from './Button.module.css';
 const Button = (props) => {
     console.log(props);
     const [isClicked, setIsClicked] = useState(false);
+    useEffect(() => {
+      setTimeout(() => {
+        setIsClicked(false);
+    },350);
+    }, [isClicked])
     return (
         <button 
             type={props.type}
-            className={`${style.Button}${isClicked?''+style.clicked:''}`} 
+            className={`${style.Button}${isClicked ? " " + style.clicked : ""}`} 
             onClick={(evt) => {
                 setIsClicked(true);
                 // traitement de l'event préalable propre au composant
