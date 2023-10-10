@@ -17,8 +17,8 @@ function App() {
         <img alt="img" src="https://cdn3.iconfinder.com/data/icons/miscellaneous-80/60/check-256.png" />
         Coucou
       </Button>
-      <Button text="Benjamin" />
-      <Button />
+      <Button text="Benjamin" type="coucou"/>
+      <Button type="button"><div>test</div></Button>
     </div>
   );
 }
