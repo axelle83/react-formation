@@ -12,16 +12,26 @@
       "withStory": true,
       "withLazy": true
     },
-    "func":{
+    "func": {
       "path": "src/App/components",
       "withStyle": true,
       "withTest": false,
       "withStory": true,
       "withLazy": true,
-      "customTemplates":{
-        "component":"GRC_Template/genericFunction/TemplateName.jsx"
+      "customTemplates": {
+        "component": "GRC_Templates/genericFunction/TemplateName.jsx"
       }
-
     }
-  }
+  },
+  "layout": {
+    "path": "src/App/components/layouts",
+    "withStyle": true,
+    "withTest": false,
+    "withStory": true,
+    "withLazy": true,
+    "customTemplates": {
+      "component": "GRC_Templates/genericLayout/TemplateName.jsx"
+    }
+  },
+  "usesCssModule": true
 }
