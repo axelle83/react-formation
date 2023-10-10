@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import style from './Button.module.css';
 
 const Button = (props) => {
-    console.log(props);
     const [isClicked, setIsClicked] = useState(false);
     useEffect(() => {
       setTimeout(() => {
