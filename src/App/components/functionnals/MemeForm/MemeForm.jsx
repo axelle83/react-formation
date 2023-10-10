@@ -54,7 +54,7 @@ const MemeForm = (props) => {
           type="number" 
           value={state.x} 
           onChange={(evt)=>{
-            setstate({...state,x:evt.target.value})
+            setstate({...state,x:Number(evt.target.value)})
           }} 
         />
         <label htmlFor="y">
@@ -67,7 +67,7 @@ const MemeForm = (props) => {
           type="number" 
           value={state.y} 
           onChange={(evt)=>{
-            setstate({...state,y:evt.target.value})
+            setstate({...state,y:Number(evt.target.value)})
           }} 
         />
         <hr />
@@ -97,7 +97,7 @@ const MemeForm = (props) => {
           min="0"
           value={state.fontSize}
           onChange={(evt)=>{
-            setstate({...state,fontSize:evt.target.value})
+            setstate({...state,fontSize:Number(evt.target.value)})
           }} 
         />
         px
@@ -159,7 +159,7 @@ const MemeForm = (props) => {
           min="0"
           value={state.frameSizeX}
           onChange={(evt)=>{
-            setstate({...state,frameSizeX:evt.target.value})
+            setstate({...state,frameSizeX:Number(evt.target.value)})
           }} 
         />
         px
@@ -174,7 +174,7 @@ const MemeForm = (props) => {
           min="0"
           value={state.frameSizeY}
           onChange={(evt)=>{
-            setstate({...state,frameSizeY:evt.target.value})
+            setstate({...state,frameSizeY:Number(evt.target.value)})
           }} 
         />
         px
