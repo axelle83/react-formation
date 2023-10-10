@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import Button from "./components/uis/Button/Button";
+import FlexHGrow from "./components/layouts/FlexHGrow/FlexHGrow";
+import FlexWGrow from "./components/layouts/FlexWGrow/FlexWGrow";
+import Header from "./components/uis/Header/Header";
+import Navbar from "./components/uis/Navbar/Navbar";
+import MemeSVGViewer from "./components/uis/MemeSVGViewer/MemeSVGViewer";
+import Footer from "./components/uis/Footer/Footer";
+import MemeForm from "./components/functionnals/MemeForm/MemeForm";
+
 
 function App() {
   const [counter, setcounter] = useState(-1);
@@ -22,27 +29,15 @@ function App() {
   //const [userState, setUserState] = useState({name:"dd",value:0});
   return (
     <div className="App">
-      Valeur counter : {counter}
-      {/*Valeur counter de userstate : {userState.value}*/}
-      <hr />
-      <Button 
-        onbuttonclick={() => {
-          setcounter(counter-1);
-          //setUserState({...userState,value:userState.value-1});
-          console.log(counter);
-        }}
-        >
-          -1
-      </Button>
-      <Button 
-        text="Annuler"
-        onbuttonclick={()=> {
-          setcounter(counter+1);
-          console.log(counter);
-        }}
-      >
-        +1
-      </Button>      
+      <FlexHGrow>
+        <Header/>
+        <Navbar/>
+        <FlexWGrow>
+          <MemeSVGViewer/>
+          <MemeForm/>
+        </FlexWGrow>
+        <Footer/>
+      </FlexHGrow> 
     </div>
   );
 }

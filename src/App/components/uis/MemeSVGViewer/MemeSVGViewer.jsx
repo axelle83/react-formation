@@ -1,22 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import styles from './MemeSvgViewer.module.css';
+import styles from './MemeSVGViewer.module.css';
 
-const MemeSvgViewer = (props) => {
+const MemeSVGViewer = (props) => {
   const [state, setstate] = useState({});
   useEffect(() => {
     return () => {
     };
   }, [])
   return (
-    <div className={styles.MemeSvgViewer} data-testid="MemeSvgViewer">
+    <div className={styles.MemeSVGViewer} data-testid="MemeSVGViewer">
       MemeSvgViewer Component
     </div>
   );
 };
 
-MemeSvgViewer.propTypes = {};
+MemeSVGViewer.propTypes = {};
 
-MemeSvgViewer.defaultProps = {};
+MemeSVGViewer.defaultProps = {};
 
-export default MemeSvgViewer;
+export default MemeSVGViewer;

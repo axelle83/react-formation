@@ -1,6 +1,6 @@
 .FlexWGrow {
     display: flex;
 }
-.FlexWGrow>*:first-child {
+.FlexWGrow>*:nth-child(1) {
     flex-grow: 1;
 }
