@@ -17,7 +17,7 @@ function App() {
   // componentDidUpdate -> mise à jour counter
   useEffect(() => {
     //corps du cycle de vie
-    console.log('didupdate sur effect', counter);
+    console.log('didUpdate sur effect', counter);
   }, [counter])
   //const [userState, setUserState] = useState({name:"dd",value:0});
   return (

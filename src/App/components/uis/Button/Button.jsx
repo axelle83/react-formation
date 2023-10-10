@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from 'prop-types';
 import style from './Button.module.css';
 
 const Button = (props) => {
     console.log(props);
+    const [isClicked, setIsClicked] = useState(false);
     return (
         <button 
             type={props.type}
-            className={style.Button} 
+            className={`${style.Button}${isClicked?''+style.clicked:''}`} 
             onClick={(evt) => {
+                setIsClicked(true);
                 // traitement de l'event préalable propre au composant
-                console.log(evt);
+                //console.log(evt);
                 // déclenchement de le fonction envoyée par les props 
                 if(undefined != props.onbuttonclick) {
                     props.onbuttonclick("coucou");
