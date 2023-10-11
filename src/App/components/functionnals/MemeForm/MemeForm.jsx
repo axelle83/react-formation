@@ -32,14 +32,18 @@ const MemeForm = (props) => {
         onChange={(evt) => {
           props.onMemeChange({
             ...props.meme,
-            imageId:Number(evt.target.value)
-           })
+            imageId:Number(evt.target.value),
+           });
         }}
         >
           <option value="-1">Pas d'image</option>
           {
             props.images.map((img,pos)=>{
-              return <option key={pos} value={img.id}>{img.titre}</option>;
+              return (
+                <option key={pos} value={img.id}>
+                  {img.titre}
+                </option>
+              );
             })
           }
         </select>

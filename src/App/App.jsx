@@ -23,10 +23,18 @@ function App(props) {
         <Header />
         <Navbar />
         <FlexWGrow>
-          <MemeSVGViewer basePath="" meme={state} />
-          <MemeForm images={images} meme={state} onMemeChange={(meme)=>{
-            setstate(meme);
-          }} />
+          <MemeSVGViewer 
+            basePath="" 
+            meme={state} 
+            image={images.find((elem) => elem.id === state.imageId)}
+          />
+          <MemeForm 
+            images={images} 
+            meme={state} 
+            onMemeChange={(meme) => {
+              setstate(meme);
+            }} 
+          />
         </FlexWGrow>
         <Footer />
       </FlexHGrow>
