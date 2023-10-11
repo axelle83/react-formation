@@ -1,18 +1,19 @@
 import {combineReducers, configureStore} from '@reduxjs/toolkit'
 import currentReducer from './currentSlice'
-import modalReducer from "./modalSlice";
+import modalReducer from './modalSlice'
+import ressourcesReducer from './ressourcesSlice'
 export const store=configureStore({
-    reducer:combineReducers({current:currentReducer, modal:modalReducer})
+    reducer:combineReducers({current: currentReducer, modal:modalReducer,ressources:ressourcesReducer}),
 });
+
+
+// console.log(changeMeme({text:'coucou'}));
 
 // console.log(store.getState());
 
 // store.subscribe(()=>{
-//     console.log(store.getState());
+//     console.log(store.getState(),store.getState().current.titre);
 // })
-
-// console.log(store.getState());
-// store.dispatch(changeMeme({text:'nouveau meme'}));
-// console.log(store.getState());
+// store.dispatch({type:'current/changeMeme',payload:{titre:'coucou'}});
+// store.dispatch(changeMeme({text:'mon nouveau meme'}));
 // store.dispatch(clearMeme());
-// console.log(store.getState());
