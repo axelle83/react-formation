@@ -7,7 +7,7 @@ import FlexWGrow from "./components/layouts/FlexWGrow/FlexWGrow";
 import MemeForm from "./components/functionnals/MemeForm/MemeForm";
 import Footer from "./components/uis/Footer/Footer";
 import { MemeSVGViewer, emptyMeme } from "orsys-tjs-meme";
-
+import {store} from './store/store';
 
 function App(props) {
   const [state, setstate] = useState(emptyMeme);
